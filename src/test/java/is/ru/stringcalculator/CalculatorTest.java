@@ -20,10 +20,19 @@ public class CalculatorTest {
 	}
 	
 	@Test
-	public void testTwoNumber(){
+	public void testTwoNumbers(){
 		int sum = 3;
 		assertEquals(sum, Calculator.add("1,2"));
 		sum = 4;
 		assertEquals(sum, Calculator.add("2,2"));
 	}
+	
+	@Test
+	public void testThreeNumbers(){
+		int sum = 3;
+		assertEquals(sum, Calculator.add("1,1,1"));
+		sum = 4;
+		assertEquals(sum, Calculator.add("1,1,2"));
+	}
+	
 }
