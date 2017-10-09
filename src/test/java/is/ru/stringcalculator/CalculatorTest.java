@@ -35,4 +35,19 @@ public class CalculatorTest {
 		assertEquals(sum, Calculator.add("1,1,2"));
 	}
 	
+	@Test
+	public void testTwoNumbersWithNewline(){
+		int sum = 2;
+		assertEquals(sum, Calculator.add("1\n1"));
+		sum = 4;
+		assertEquals(sum, Calculator.add("2\n2"));
+	}
+	
+	@Test
+	public void testThreeNumbersWithNewline(){
+		int sum = 3;
+		assertEquals(sum, Calculator.add("1\n1,1"));
+		sum = 4;
+		assertEquals(sum, Calculator.add("1\n1,2"));
+	}
 }
