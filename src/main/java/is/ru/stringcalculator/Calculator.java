@@ -26,11 +26,12 @@ public class Calculator {
 		int total = 0;
 		ArrayList<String> negNum = new ArrayList<String>();
 		String message = "Negatives not allowed: ";
+		
 		for(String number : numbers){
 			if(toInt(number) < 0){
 				negNum.add(number);
 			}
-			else{
+			else if(toInt(number) < 1001){
 				total += toInt(number);
 			}
 		}

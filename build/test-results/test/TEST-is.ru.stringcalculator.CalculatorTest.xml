@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="is.ru.stringcalculator.CalculatorTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-10-10T08:04:24" hostname="DESKTOP-K49HUV0" time="0.011">
+<testsuite name="is.ru.stringcalculator.CalculatorTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2017-10-10T08:13:35" hostname="DESKTOP-K49HUV0" time="0.009">
   <properties/>
-  <testcase name="testThrowExceptionForOneNegativeNumber" classname="is.ru.stringcalculator.CalculatorTest" time="0.004"/>
+  <testcase name="testThrowExceptionForOneNegativeNumber" classname="is.ru.stringcalculator.CalculatorTest" time="0.003"/>
   <testcase name="testTwoNumbersWithNewline" classname="is.ru.stringcalculator.CalculatorTest" time="0.001"/>
   <testcase name="testEmptyString" classname="is.ru.stringcalculator.CalculatorTest" time="0.0"/>
-  <testcase name="testThrowExceptionForTwoNegativeNumbers" classname="is.ru.stringcalculator.CalculatorTest" time="0.0"/>
-  <testcase name="testThreeNumbersWithNewline" classname="is.ru.stringcalculator.CalculatorTest" time="0.001"/>
+  <testcase name="testThrowExceptionForTwoNegativeNumbers" classname="is.ru.stringcalculator.CalculatorTest" time="0.001"/>
+  <testcase name="testNumberOver1000ShouldBeIgnored" classname="is.ru.stringcalculator.CalculatorTest" time="0.0"/>
+  <testcase name="testThreeNumbersWithNewline" classname="is.ru.stringcalculator.CalculatorTest" time="0.0"/>
   <testcase name="testThreeNumbers" classname="is.ru.stringcalculator.CalculatorTest" time="0.0"/>
-  <testcase name="testTwoNumbers" classname="is.ru.stringcalculator.CalculatorTest" time="0.001"/>
+  <testcase name="testTwoNumbers" classname="is.ru.stringcalculator.CalculatorTest" time="0.0"/>
   <testcase name="testOneNumber" classname="is.ru.stringcalculator.CalculatorTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

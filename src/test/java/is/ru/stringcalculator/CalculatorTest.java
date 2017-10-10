@@ -69,4 +69,12 @@ public class CalculatorTest {
 			assertEquals("Negatives not allowed: [-1, -2]", e.getMessage());
 		}
 	}
+	
+	@Test
+	public void testNumberOver1000ShouldBeIgnored(){
+		int sum = 3;
+		assertEquals(sum, Calculator.add("1,1,1,1001"));
+		sum = 4;
+		assertEquals(sum, Calculator.add("1\n1,2,2002"));
+	}
 }
