@@ -1,6 +1,7 @@
 package is.ru.stringcalculator;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 import org.junit.Test;
 
 public class CalculatorTest {
@@ -49,5 +50,23 @@ public class CalculatorTest {
 		assertEquals(sum, Calculator.add("1\n1,1"));
 		sum = 4;
 		assertEquals(sum, Calculator.add("1\n1,2"));
+	}
+	
+	@Test
+	public void testThrowExceptionForOneNegativeNumber(){
+		try{
+			Calculator.add("-1,2");
+		} catch(RuntimeException e) {
+			assertEquals("Negatives not allowed: [-1]", e.getMessage());
+		}
+	}
+	
+	@Test
+	public void testThrowExceptionForTwoNegativeNumbers(){
+		try{
+			Calculator.add("1\n-1,-2");
+		} catch(RuntimeException e) {
+			assertEquals("Negatives not allowed: [-1, -2]", e.getMessage());
+		}
 	}
 }
