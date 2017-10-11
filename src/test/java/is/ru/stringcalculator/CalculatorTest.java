@@ -77,4 +77,10 @@ public class CalculatorTest {
 		sum = 4;
 		assertEquals(sum, Calculator.add("1\n1,2,2002"));
 	}
+	
+	@Test
+	public void testChangeDelimiter() {
+		int sum = 3;
+		assertEquals(sum, Calculator.add("//;\n1;2"));
+	}
 }

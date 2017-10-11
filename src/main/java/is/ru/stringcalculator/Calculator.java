@@ -6,16 +6,24 @@ public class Calculator {
 	
 	public static int add(String text) {
 		int total = 0;
+		String delimiter = "\n";
+		
+		if(text.startsWith("//")) {
+			delimiter = text.substring(2, 3);
+			text = text.substring(4);
+		}
+		
 		if (!text.equals("")){
-			if(text.contains(",") || text.contains("\n")) {
-				String numbers[] = text.split(",|\n");
+			if(text.contains(",") || text.contains(delimiter)) {
+				String numbers[] = text.split(",|" + delimiter);
 				total += sum(numbers);
 			}
 			else {
 				total += toInt(text);
-			}	
+			}
 		}
 		return total;
+		
 	}
 	
 	private static int toInt(String number) {
